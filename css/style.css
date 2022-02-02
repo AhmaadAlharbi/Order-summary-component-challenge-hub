@@ -57,37 +57,28 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
-  transform: translateY(50px);
-  -webkit-transform: translateY(50px);
-  -moz-transform: translateY(50px);
-  -ms-transform: translateY(50px);
-  -o-transform: translateY(50px);
+  min-height: 100vh;
 }
 .card {
-  background: white;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 325px;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 .card-header img {
   border-radius: 10px;
-  width: 405px;
+  width: 100%;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
 .card-body {
-  padding: 40px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .card-body h1 {
   color: hsl(223, 47%, 23%);
@@ -111,6 +102,7 @@ main {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   align-items: center;
+  justify-content: space-evenly;
 }
 .price img {
   max-width: 100%;
@@ -119,34 +111,15 @@ main {
 
 .price img:first-child {
   flex: 1;
-  transform: translateX(-50px);
-  -webkit-transform: translateX(-50px);
-  -moz-transform: translateX(-50px);
-  -ms-transform: translateX(-50px);
-  -o-transform: translateX(-50px);
 }
 
 .price div {
   flex: 1;
   margin-left: 20px;
-  transform: translateX(-50px);
-  -webkit-transform: translateX(-50px);
-  -moz-transform: translateX(-50px);
-  -ms-transform: translateX(-50px);
-  -o-transform: translateX(-50px);
-  -webkit-border-radius: 120px;
-  -moz-border-radius: 120px;
-  -ms-border-radius: 120px;
-  -o-border-radius: 120px;
 }
 .price a {
   flex: 1;
   display: block;
-  transform: translateX(50px);
-  -webkit-transform: translateX(50px);
-  -moz-transform: translateX(50px);
-  -ms-transform: translateX(50px);
-  -o-transform: translateX(50px);
 }
 .card-footer {
   display: flex;
@@ -155,20 +128,19 @@ main {
 }
 .card-footer > button:first-of-type {
   display: block;
-  width: 100%;
   background: hsl(245, 75%, 52%);
   color: white;
-  padding: 15px 30px;
+  padding: 1rem 3rem;
   border: none;
   cursor: pointer;
-  width: 357px;
-  margin-bottom: 10px;
+  margin: 20px 0 41px 0;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   font-weight: bold;
+  box-shadow: 0px 16px 12px rgb(56 41 224 / 25%);
 }
 .card-footer > button:last-of-type {
   padding: 15px 30px;
