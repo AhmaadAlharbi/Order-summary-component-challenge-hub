@@ -1,0 +1,184 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+/* Start Variables */
+:root {
+  --main-color: #19c8fa;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
+}
+/* End Variables */
+/*Start Global Rules*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*main*/
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+}
+.card {
+  background: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-header img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.card-body {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.card-body h1 {
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.card-body p {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.6;
+  text-align: center;
+}
+.price {
+  display: flex;
+  margin-top: 40px;
+  background: hsl(225, 100%, 98%);
+  flex-direction: row;
+  padding: 10px 60px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  align-items: center;
+}
+.price img {
+  max-width: 100%;
+  display: block;
+}
+
+.price img:first-child {
+  flex: 1;
+  transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
+}
+
+.price div {
+  flex: 1;
+  margin-left: 20px;
+  transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  -ms-border-radius: 120px;
+  -o-border-radius: 120px;
+}
+.price a {
+  flex: 1;
+  display: block;
+  transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+  -moz-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  -o-transform: translateX(50px);
+}
+.card-footer {
+  display: flex;
+  flex-direction: column;
+}
+.card-footer > button:first-of-type {
+  display: block;
+  width: 100%;
+  background: hsl(245, 75%, 52%);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  width: 400px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-weight: bold;
+}
+.card-footer > button:last-of-type {
+  padding: 15px 30px;
+  background: white;
+  border: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+}
